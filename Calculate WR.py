@@ -4,7 +4,7 @@ from PyQt6 import QtGui, QtCore
 class Window(QWidget):
     def __init__(self):
         super().__init__()
-        self.setFixedSize(300, 260)
+        self.setFixedSize(300, 270)
         self.setWindowTitle("Calculate WR")
         self.setWindowIcon(QtGui.QIcon("M:\\Mohamed\\Programming\\Calculate WR\\icon.ico"))
 
@@ -15,7 +15,7 @@ class Window(QWidget):
         self.matches_label = QLabel("Matches played:", self)
         self.matches_label.move(100, 50)
         self.matches = QLineEdit(self)
-        self.matches.setPlaceholderText("Enter matches.")
+        self.matches.setPlaceholderText("Enter total matches.")
         self.matches.move(60, 70)
         self.matches.resize(180, 25)
         self.matches.setStyleSheet("""font-weight: bold; border: 2px solid green; font-size: 13px; border-radius: 6px;""")
@@ -25,7 +25,7 @@ class Window(QWidget):
         self.winrate_label = QLabel("Winrate:", self)
         self.winrate_label.move(125, 100)
         self.winrate = QLineEdit(self)
-        self.winrate.setPlaceholderText("Enter winrate.")      
+        self.winrate.setPlaceholderText("Enter current winrate.")      
         self.winrate.move(60, 120)
         self.winrate.resize(180, 25)
         self.winrate.setStyleSheet("""font-weight: bold; border: 2px solid green; font-size: 13px; border-radius: 6px;""")
@@ -43,8 +43,8 @@ class Window(QWidget):
         self.expected_wr.returnPressed.connect(self.func)
 
         self.result= QLabel(self)
-        self.result.resize(200, 25)
-        self.result.move(95, 200)
+        self.result.resize(250, 30)
+        
         self.result.setStyleSheet("""font-weight: bold;""")
         self.show
 
@@ -64,17 +64,21 @@ class Window(QWidget):
             x = symbols('x')
             result = (((matches * winrate)) + x ) / (matches + x) - expected_wr    
             result = [float(i) for i in solve(result)][0]
-            self.result.setText(f"{str(round(result, 2))} matches")
+            self.result.move(30, 200)
+            self.result.setText(f"You need to win {str(round(result))} consecutive matches.")
             self.result.setStyleSheet("""font-weight: bold; color: green;""")
+
         except ValueError:
             self.result.setText("Enter valid values.")
             self.result.setStyleSheet("""color: red; font-weight: bold;""")
-        
+            self.result.move(90, 200)
 
 app = QApplication([])
 window = Window()
 window.show()
-sys.exit(app.exec())      
+sys.exit(app.exec())   
+
+
 """
 x = symbols('x')
 
