@@ -1,6 +1,7 @@
 # WR Calculator
 
 A simple tool to calculate matches you need to win to reach a certain Winrate.
+
 ![GUI](https://i.imgur.com/EFjaEFB.png)
 ## Authors
 
