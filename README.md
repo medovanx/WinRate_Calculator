@@ -2,7 +2,7 @@
 
 A simple tool to calculate matches you need to win to reach a certain Winrate.
 
-![GUI](https://i.imgur.com/EFjaEFB.png)
+![GUI](https://i.imgur.com/I2yIJsq.png)
 ## Authors
 
 - [@medovanx](https://github.com/medovanx)
