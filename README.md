@@ -6,7 +6,7 @@
 A simple tool to calculate matches you need to win to reach a certain Winrate.
   
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
-![PyPI version](https://img.shields.io/pypi/pyversions/spotDL?color=%2344CC11&style=flat-square)
+![PyPI version](https://img.shields.io/pypi/pyversions/spotDL?color=%2344CC11&style=flat-square)(https://www.python.org/)
   
 </div>
 
