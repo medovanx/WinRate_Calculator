@@ -7,6 +7,7 @@ You can run the py file after installing the PyQt6 library.
 Or if you like the easy way just download the EXE release.
 
 ![GUI](https://i.imgur.com/FolAPKj.png)
+![GUI2](https://i.imgur.com/XMnHwyN.png)
 ## Authors
 
 - [@medovanx](https://github.com/medovanx)
