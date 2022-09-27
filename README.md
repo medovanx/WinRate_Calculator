@@ -16,6 +16,8 @@ In order to run the py file directly you need to install [PyQt6](https://pypi.or
 
 If you like the easy way just download the [EXE release](https://github.com/medovanx/wr_calculator/releases/tag/portable) and open it.
 
+## GUI
+
 ![GUI](https://i.imgur.com/qQUnyhI.png)
 ![GUI2](https://i.imgur.com/Sz6uGQ4.png)
 ![GUI3](https://i.imgur.com/tNJpmKm.png)
