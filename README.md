@@ -1,6 +1,16 @@
-# WR Calculator
+<!--- mdformat-toc start --slug=github --->
+<div align="center">
+  
+#  WR Calculator
+  
+A simple tool to calculate matches you need to win to reach a certain Winrate.
+  
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+![PyPI version](https://img.shields.io/pypi/pyversions/spotDL?color=%2344CC11&style=flat-square)
+  
+</div>
 
-                                  A simple tool to calculate matches you need to win to reach a certain Winrate.
+## Notes
 
 In order to run the py file directly you need to install [PyQt6](https://pypi.org/project/PyQt6/) library.
 
@@ -19,6 +29,4 @@ If you like the easy way just download the [EXE release](https://github.com/medo
 - Mohamed Darwesh [@medovanx](https://github.com/medovanx)
 
 
-## License
 
-[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
