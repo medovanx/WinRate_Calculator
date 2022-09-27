@@ -8,6 +8,7 @@ Or if you like the easy way just download the EXE release.
 
 ![GUI](https://i.imgur.com/FolAPKj.png)
 ![GUI2](https://i.imgur.com/XMnHwyN.png)
+![GUI3](https://i.imgur.com/pJTkYsZ.png)
 ## Authors
 
 - [@medovanx](https://github.com/medovanx)
