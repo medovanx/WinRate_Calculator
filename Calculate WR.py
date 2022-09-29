@@ -7,7 +7,6 @@ class Window(QWidget):
         
         self.setFixedSize(300, 270)
         self.setWindowTitle("WR Calculator")
-        self.setWindowIcon(QtGui.QIcon("M:\\Mohamed\\Programming\\WR_Calculator\\icon.ico"))
 
         self.description = QLabel("  Calculate how many matches you need to win\n                  to reach a certain winrate.", self)
         self.description.setStyleSheet("""font-weight: bold;""")
@@ -66,7 +65,7 @@ class Window(QWidget):
             result = (((matches * winrate)) + x ) / (matches + x) - expected_wr    
             result = [float(i) for i in solve(result)][0]
             self.result.move(15, 200)
-            self.result.setText(f"You need to win {str(round(result, 2))} consecutive matches.")
+            self.result.setText(f"You need to win {str(round(int(result), 2))} consecutive matches.")
             self.result.setStyleSheet("""font-weight: bold; color: green;""")
 
         except ValueError:
