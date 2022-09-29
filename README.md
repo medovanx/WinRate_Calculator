@@ -12,7 +12,7 @@ A simple tool to calculate matches you need to win to reach a certain Winrate.
 
 ## Notes
 
-In order to run the py file directly you need to install [PyQt6](https://pypi.org/project/PyQt6/) library.
+In order to run the py file throught the terminal you need to install [PyQt6](https://pypi.org/project/PyQt6/) library.
 
 If you like the easy way just download the [EXE release](https://github.com/medovanx/wr_calculator/releases/tag/portable) and open it.
 
