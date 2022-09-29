@@ -4,9 +4,10 @@ from PyQt6 import QtGui, QtCore
 class Window(QWidget):
     def __init__(self):
         super().__init__()
+        
         self.setFixedSize(300, 270)
-        self.setWindowTitle("Calculate WR")
-        self.setWindowIcon(QtGui.QIcon("M:\\Mohamed\\Programming\\Calculate WR\\icon.ico"))
+        self.setWindowTitle("WR Calculator")
+        self.setWindowIcon(QtGui.QIcon("M:\\Mohamed\\Programming\\WR_Calculator\\icon.ico"))
 
         self.description = QLabel("  Calculate how many matches you need to win\n                  to reach a certain winrate.", self)
         self.description.setStyleSheet("""font-weight: bold;""")
@@ -43,7 +44,7 @@ class Window(QWidget):
         self.expected_wr.returnPressed.connect(self.func)
 
         self.result= QLabel(self)
-        self.result.resize(250, 30)
+        self.result.resize(280, 30)
         
         self.result.setStyleSheet("""font-weight: bold;""")
         self.show
@@ -64,8 +65,8 @@ class Window(QWidget):
             x = symbols('x')
             result = (((matches * winrate)) + x ) / (matches + x) - expected_wr    
             result = [float(i) for i in solve(result)][0]
-            self.result.move(30, 200)
-            self.result.setText(f"You need to win {str(round(result))} consecutive matches.")
+            self.result.move(15, 200)
+            self.result.setText(f"You need to win {str(round(result, 2))} consecutive matches.")
             self.result.setStyleSheet("""font-weight: bold; color: green;""")
 
         except ValueError:
