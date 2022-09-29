@@ -18,9 +18,10 @@ If you like the easy way just download the [EXE release](https://github.com/medo
 
 ## GUI
 
-![GUI](https://i.imgur.com/qQUnyhI.png)
-![GUI2](https://i.imgur.com/Sz6uGQ4.png)
-![GUI3](https://i.imgur.com/tNJpmKm.png)
+![GUI](https://user-images.githubusercontent.com/29468096/193022572-fecafc6e-cb9e-444d-9710-15bd8bc2c5fd.png)
+![GUI2](https://user-images.githubusercontent.com/29468096/193022502-0ffc4626-05ef-41e8-bcbe-9371ae0d48f0.png)
+![GUI3](https://user-images.githubusercontent.com/29468096/193022373-e5908f39-b7c8-4fc9-9d1c-e27243bfc210.png)
+
 
 ## Installation
 - [PyQt6](https://pypi.org/project/PyQt6/)
