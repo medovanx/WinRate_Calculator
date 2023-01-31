@@ -74,14 +74,3 @@ window = Window()
 window.show()
 sys.exit(app.exec())   
 
-
-"""
-x = symbols('x')
-
-matches = int(input("Enter total matches: "))
-winrate = float(input("Enter Win Rate: "))/100
-expected_wr = float(input("Enter Expected WR: "))/100
-      
-result = (((matches * winrate)) + x ) / (matches + x) - expected_wr
-
-print(solve(result))"""
