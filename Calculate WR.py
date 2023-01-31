@@ -1,16 +1,17 @@
 import sys
 from PyQt6.QtWidgets import QLineEdit, QLabel, QApplication, QWidget
 from PyQt6 import QtGui, QtCore
+from PyQt6.QtCore import Qt
+
 class Window(QWidget):
     def __init__(self):
         super().__init__()
-        
-        self.setFixedSize(300, 270)
         self.setWindowTitle("WR Calculator")
-
-        self.description = QLabel("  Calculate how many matches you need to win\n                  to reach a certain winrate.", self)
+        self.setWindowIcon(QtGui.QIcon(r"M:\Mohamed\Programming\WR Calculator\icon.png"))
+        self.setFixedSize(280, 270)
+        self.description = QLabel("     Calculate how many matches you need to win\nto reach a certain winrate.", self)
         self.description.setStyleSheet("""font-weight: bold;""")
-        self.description.move(0, 5)
+        self.description.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
 
         self.matches_label = QLabel("Matches played:", self)
         self.matches_label.move(100, 50)
@@ -41,19 +42,14 @@ class Window(QWidget):
         self.expected_wr.setStyleSheet("""font-weight: bold; border: 2px solid green; font-size: 13px; border-radius: 6px;""")
         self.expected_wr.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.expected_wr.returnPressed.connect(self.func)
-
+        
         self.result= QLabel(self)
         self.result.resize(280, 30)
         
         self.result.setStyleSheet("""font-weight: bold;""")
-        self.show
-
-        self.author = QLabel("Created by: Mohamed Darwesh (@medovanx)", self)
-        self.author.move(10, 240)
-        self.author.setStyleSheet("""font-weight: bold; font-size: 12px;""")
-        self.show()
-
-
+        author = QLabel('Created by: Mohamed Darwesh (<a href="https://github.com/medovanx">@medovanx</a>)', self)
+        author.move(10, 240)
+        author.setStyleSheet("""font-weight: bold; font-size: 12px;""")
 
     def func(self):
         try:
@@ -77,3 +73,15 @@ app = QApplication([])
 window = Window()
 window.show()
 sys.exit(app.exec())   
+
+
+"""
+x = symbols('x')
+
+matches = int(input("Enter total matches: "))
+winrate = float(input("Enter Win Rate: "))/100
+expected_wr = float(input("Enter Expected WR: "))/100
+      
+result = (((matches * winrate)) + x ) / (matches + x) - expected_wr
+
+print(solve(result))"""
